@@ -32,6 +32,7 @@
     <string name="system_title">System</string>
     <string name="notifications_title">Notifications</string>
     <string name="power_hardware_title">Power button</string>
+    <string name="quicksettings_title">Quick settings</string>
 
     <!-- category -->
     <string name="buttons_hardware_category">Hardware buttons</string>
@@ -190,5 +191,14 @@
     <string name="theme_accent_picker_title">Accent color</string>
     <string name="theme_accent_picker_summary">Select system theme accent color</string>
     <string name="theme_accent_picker_default">Default</string>
+
+    <!-- Quick pull down-->
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_always">Always show Quick Settings on status bar pulldown</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+    <string name="quick_pulldown_always">Always</string>
 
 </resources>

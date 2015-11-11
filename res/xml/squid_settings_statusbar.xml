@@ -19,9 +19,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <Preference
-            android:title="@string/traffic_title"
-            android:key="traffic"
-            android:fragment="com.squid.settings.Traffic" />
+        android:fragment="com.squid.settings.QuickSettings"
+        android:key="quicksettings"
+        android:title="@string/quicksettings_title" />
 
     <Preference
             android:title="@string/statusbar_items_title" >
