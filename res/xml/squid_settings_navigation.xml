@@ -18,4 +18,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+        <Preference
+            android:key="navigation_options"
+            android:fragment="com.extra.settings.NavbarSettings"
+            android:title="@string/navigationbar_settings_title" />
+
 </PreferenceScreen>
