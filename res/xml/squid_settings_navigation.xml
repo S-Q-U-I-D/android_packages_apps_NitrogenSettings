@@ -39,4 +39,11 @@
             android:fragment="com.squid.settings.PowerMenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
+        <!-- Lockscreen  -->
+        <PreferenceScreen
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title" 
+            android:fragment="com.squid.settings.LockscreenSettings"
+            android:icon="@drawable/ic_settings_lockscreen"/>
+
 </PreferenceScreen>

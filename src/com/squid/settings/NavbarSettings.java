@@ -36,7 +36,7 @@ public class NavbarSettings extends CustomSettingsPreferenceFragment implements 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.extra_navbar_settings);
+        addPreferencesFromResource(R.xml.squid_settings_navbar);
         addCustomPreference(findPreference(NAVIGATION_BAR_ENABLED), SECURE_TWO_STATE,
                 getActivity().getResources().getBoolean(
                 com.android.internal.R.bool.config_showNavigationBar) ? 1 : 0);
