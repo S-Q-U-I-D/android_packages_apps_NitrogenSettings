@@ -31,6 +31,12 @@
     </Preference>
 
     <com.squid.settings.preferences.SystemSettingSwitchPreference
+			android:key="double_tap_sleep_gesture"
+			android:title="@string/double_tap_to_sleep_title"
+			android:summary="@string/double_tap_to_sleep_summary"
+			android:defaultValue="true" />
+
+    <com.squid.settings.preferences.SystemSettingSwitchPreference
 			android:key="volte_icon"
             android:title="@string/volte_icon_title"
             android:summary="@string/volte_icon_summary"
@@ -42,18 +48,18 @@
             android:summary="@string/data_disabled_icon_summary"
             android:defaultValue="true"/>
     
-    <com.extra.settings.preferences.SystemSettingSwitchPreference
+    <com.squid.settings.preferences.SystemSettingSwitchPreference
             android:key="show_fourg_icon"
             android:title="@string/show_fourg_icon_title"
             android:summary="@string/show_fourg_icon_summary"
             android:defaultValue="false"/>
 
-    <com.extra.settings.preferences.SystemSettingSwitchPreference
+    <com.squid.settings.preferences.SystemSettingSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_state_title"
         android:summary="@string/network_traffic_state_summary"
         android:defaultValue="false" />
-    <com.extra.settings.preferences.CustomSeekBarPreference
+    <com.squid.settings.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
         android:max="10"
