@@ -48,16 +48,31 @@ import com.android.settings.Utils;
 
   public class NotificationsSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-      @Override
+
+    private PreferenceCategory mLedsCategory;
+    private Preference mChargingLeds;
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
           addPreferencesFromResource(R.xml.squid_settings_notifications);
 
-          final ContentResolver resolver = getActivity().getContentResolver();
+        final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
-      }
+        mLedsCategory = (PreferenceCategory) findPreference("light_category");
+        mChargingLeds = (Preference) findPreference("battery_charging_light");
+        if (mChargingLeds != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            mLedsCategory.removePreference(mChargingLeds);
+        }
+          if (mChargingLeds == null) {
+            prefSet.removePreference(mLedsCategory);
+        }
+
+    }
 
       @Override
     public int getMetricsCategory() {
