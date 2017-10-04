@@ -56,4 +56,7 @@
     <string name="powermenu_logout">Logout</string>
     <string name="powermenu_torch">Flashlight</string
 
+    <!-- Toggle navigation bar -->
+    <string name="navigation_bar_enabled_title">Enable navigation bar</string>
+
 </resources>

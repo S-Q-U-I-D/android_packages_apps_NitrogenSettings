@@ -20,7 +20,7 @@
 
         <Preference
             android:key="navigation_options"
-            android:fragment="com.extra.settings.NavbarSettings"
+            android:fragment="com.squid.settings.NavbarSettings"
             android:title="@string/navigationbar_settings_title" />
 
 </PreferenceScreen>
