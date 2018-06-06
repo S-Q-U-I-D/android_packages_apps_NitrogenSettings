@@ -15,18 +15,15 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/volume_title">
 
+    <!-- Volume steps -->
     <Preference
-            android:title="@string/traffic_title"
-            android:key="traffic"
-            android:fragment="com.squid.settings.Traffic" />
-
-    <Preference
-            android:title="@string/statusbar_items_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
+        android:key="volume_steps"
+        android:title="@string/volume_steps_title"
+        android:summary="@string/volume_steps_summary"
+        android:fragment="com.squid.settings.VolumeSteps" />
     </Preference>
     
 </PreferenceScreen>
