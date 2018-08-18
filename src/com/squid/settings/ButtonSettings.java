@@ -21,12 +21,14 @@ import android.os.Bundle;
 import com.android.settings.R;
 import com.android.settings.squid.CustomSettingsPreferenceFragment;
 
-public class Buttons extends CustomSettingsPreferenceFragment {
+public class ButtonsSettings extends CustomSettingsPreferenceFragment {
+    private static final String VOLUME_BUTTON_MUSIC_CONTROL = "volume_button_music_control";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.squid_settings_buttons);
+        addCustomPreference(findPreference(VOLUME_BUTTON_MUSIC_CONTROL), SYSTEM_TWO_STATE, STATE_OFF);
     }
 }
