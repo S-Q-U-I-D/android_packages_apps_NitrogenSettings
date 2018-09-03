@@ -16,34 +16,30 @@
 
 package com.squid.settings.fragments;
 
-import android.content.Context;
-import android.content.ContentResolver;
-import android.content.Intent;
-import android.content.pm.UserInfo;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.os.UserManager;
-import android.support.v7.preference.ListPreference;
+import android.provider.Settings;
+import android.content.ContentResolver;
+import android.support.v4.app.Fragment;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
+import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
-import android.support.v14.preference.SwitchPreference;
-import android.provider.Settings;
-import com.android.settings.R;
-import android.support.annotation.NonNull;
 
-import com.android.internal.logging.nano.MetricsProto;
+import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.List;
+import com.extra.settings.preferences.SystemSettingSwitchPreference;
+import com.extra.settings.preferences.CustomSeekBarPreference;
 
+import com.android.internal.logging.nano.MetricsProto;
 
 public class PowerMenuSettings extends SettingsPreferenceFragment
                 implements Preference.OnPreferenceChangeListener {
 
+		private CustomSeekBarPreference mThreshold;
+		private SystemSettingSwitchPreference mNetMonitor;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -56,6 +52,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment
 
     }
 
+<<<<<<< HEAD:src/com/squid/settings/fragments/PowerMenuSettings.java
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 
@@ -66,5 +63,4 @@ public class PowerMenuSettings extends SettingsPreferenceFragment
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.SQUID_SETTINGS;
     }
-
 }
