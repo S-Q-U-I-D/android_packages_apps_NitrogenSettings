@@ -17,12 +17,14 @@
 
  package com.squid.settings;
 
- import com.android.settings.R;
+import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
-import com.nitrogen.settings.preferences.CustomSeekBarPreference;
+import com.squid.settings.preferences.CustomSeekBarPreference;
 
  import android.content.ContentResolver;
 import android.content.Context;
@@ -30,6 +32,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
  import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -37,8 +40,7 @@ import android.provider.Settings;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OmniGestureSettings extends SettingsPreferenceFragment implements
-        Preference.OnPreferenceChangeListener, Indexable {
+public class OmniGestureSettings extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener, Indexable {
     private static final String TAG = "OmniGestureSettings";
     private static final String KEY_SWIPE_LENGTH = "gesture_swipe_length";
     private static final String KEY_SWIPE_TIMEOUT = "gesture_swipe_timeout";
