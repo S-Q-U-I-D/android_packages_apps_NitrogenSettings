@@ -27,6 +27,7 @@
     <string name="volume_title">Volume rockers</string>
     <string name="notifications_title">Notifications</string>
     <string name="lockscreen_title">Lockscreen</string>
+    <string name="buttons_title">Buttons</string>
     
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Enable navigation bar</string>
