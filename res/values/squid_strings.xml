@@ -30,6 +30,7 @@
     <string name="buttons_title">Buttons</string>
     <string name="volume_title">Volume</string>
     <string name="system_title">System</string>
+    <string name="notifications_title">Notifications</string>
 
     <!-- Button category -->
     <string name="buttons_hardware_category">Hardware buttons</string>

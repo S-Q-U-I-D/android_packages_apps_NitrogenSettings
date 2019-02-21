@@ -39,6 +39,13 @@
             android:fragment="com.extra.settings.VolumeSettings"
             android:icon="@drawable/ic_settings_volume"/>
 
+        <!-- Notifications -->
+        <PreferenceScreen
+            android:key="notifications_category"
+            android:title="@string/notifications_title" 
+            android:fragment="com.extra.settings.NotificationsSettings"
+            android:icon="@drawable/ic_settings_notifications"/>
+
         <!-- Power Menu -->
         <PreferenceScreen
             android:key="powermenu__category"
