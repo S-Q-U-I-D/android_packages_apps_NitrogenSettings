@@ -41,4 +41,10 @@
 
     </PreferenceCategory>
 
+    <!-- Powermenu hardware -->
+    <PreferenceScreen
+         android:key="power_hardware_category"
+         android:title="@string/power_hardware_title" 
+         android:fragment="com.extra.settings.PowerHardwareSettings" />
+
 </PreferenceScreen>
