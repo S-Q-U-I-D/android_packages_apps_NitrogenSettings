@@ -31,7 +31,7 @@
     <string name="volume_title">Volume</string>
     <string name="system_title">System</string>
     <string name="notifications_title">Notifications</string>
-    <string name="power_hardware_title">Power hardware buttons</string>
+    <string name="power_hardware_title">Power button</string>
 
     <!-- category -->
     <string name="buttons_hardware_category">Hardware buttons</string>
