@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.settings;
+package com.squid.settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -35,12 +35,12 @@ public class NitrogenSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.nitrogen_settings);
+        addPreferencesFromResource(R.xml.squid_settings);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.SQUID_SETTINGS;
     }
 
     public static void lockCurrentOrientation(Activity activity) {
