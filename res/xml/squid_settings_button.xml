@@ -18,9 +18,15 @@
         android:title="@string/button_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
+    <Preference
         android:key="volume_key"
         android:fragment="com.squid.settings.fragments.VolumeRockerSettings"
         android:title="@string/volume_title" />
 
-</PreferenceScreen>
+
+    <Preferenc
+        android:key="power_menu"
+        android:title="@string/powermenu_title"
+        android:fragment="com.squid.settings.fragments.PowerMenu" />
+
+<PreferenceScreen>
