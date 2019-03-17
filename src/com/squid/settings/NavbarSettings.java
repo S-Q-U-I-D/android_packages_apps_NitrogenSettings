@@ -22,7 +22,7 @@ import android.os.Bundle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
-mport android.support.v14.preference.SwitchPreference;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 
 import com.android.internal.util.squid.SquidUtils;
