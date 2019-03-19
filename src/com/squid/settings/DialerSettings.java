@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package com.extra.settings;
+package com.squid.settings;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -59,6 +59,6 @@ public class DialerSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AOSP;
+        return MetricsProto.MetricsEvent.SQUID;
     }
 }

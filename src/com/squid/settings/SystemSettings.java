@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.extra.settings;
+package com.squid.settings;
 
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceScreen;
@@ -28,12 +28,12 @@ public class SystemSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.extra_settings_system);
+        addPreferencesFromResource(R.xml.squid_settings_system);
         PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.AOSP;
+        return MetricsProto.MetricsEvent.SQUID;
     }
 }
