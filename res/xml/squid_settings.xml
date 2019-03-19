@@ -87,4 +87,11 @@
             android:fragment="com.squid.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_miscs"/>
 
+        <!-- System -->
+        <Preference
+            android:key="system_category"
+            android:fragment="com.squid.settings.SystemSettings"
+            android:title="@string/system_title" 
+            android:icon="@drawable/ic_settings_system"/>
+
 </PreferenceScreen>
