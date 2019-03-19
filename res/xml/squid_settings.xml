@@ -41,7 +41,7 @@
         <!-- Navigation Bar -->
         <Preference
             android:key="navigationbar_category"
-            android:title="@string/navbar_title" 
+            android:title="@string/navigationbar_title" 
             android:fragment="com.squid.settings.fragments.NavbarSettings"
             android:icon="@drawable/ic_settings_navbar"/>
 
