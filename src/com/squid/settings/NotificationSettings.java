@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.extra.settings;
+ package com.squid.settings;
 
-import android.app.ActivityManagerNative;
+ import android.app.ActivityManagerNative;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -37,39 +37,39 @@ import android.view.IWindowManager;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import java.util.Locale;
+ import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.android.settings.R;
+ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
- public class NotificationsSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+  public class NotificationsSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-     @Override
+      @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-         addPreferencesFromResource(R.xml.extra_settings_notifications);
+          addPreferencesFromResource(R.xml.squid_settings_notifications);
 
-         final ContentResolver resolver = getActivity().getContentResolver();
+          final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
-     }
+      }
 
-     @Override
+      @Override
     public int getMetricsCategory() {
-        return MetricsEvent.AOSP;
+        return MetricsEvent.SQUID;
     }
 
-     @Override
+      @Override
     public void onResume() {
         super.onResume();
     }
 
-     @Override
+      @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         return false;
     }
