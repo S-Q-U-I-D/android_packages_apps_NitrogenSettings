@@ -32,8 +32,9 @@
     <string name="system_title">System</string>
     <string name="notifications_title">Notifications</string>
 
-    <!-- Button category -->
+    <!-- category -->
     <string name="buttons_hardware_category">Hardware buttons</string>
+    <string name="light_category">Lights</string>
     
     <!-- Toggle navigation bar -->
     <string name="navigation_bar_enabled_title">Enable navigation bar</string>
